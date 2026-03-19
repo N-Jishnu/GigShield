@@ -27,7 +27,6 @@
 10. [Tech Stack](#-tech-stack)
 11. [Development Roadmap](#-development-roadmap)
 12. [Market Crash Compliance](#-market-crash-compliance)
-13. [Team](#-team)
 
 ---
 
@@ -435,9 +434,9 @@ This section will be updated based on the specific compliance requirements issue
 
 | Name | Role | Responsibility |
 |------|------|---------------|
-| TBD | Full Stack Lead | Frontend (React PWA), API development |
-| TBD | Backend & DevOps | Express.js APIs, PostgreSQL, CI/CD, deployment |
-| TBD | AI/ML Engineer | Premium model, fraud detection, predictive analytics |
-| TBD | Product & Design | UX research, persona development, UI design, video |
+| Jishnu | Full Stack Lead | Frontend (React PWA), API development |
+| Swayam | Backend & DevOps | Express.js APIs, PostgreSQL, CI/CD, deployment |
+| Adit  | AI/ML Engineer | Premium model, fraud detection, predictive analytics |
+| Gargi | Product & Design | UX research, persona development, UI design, video |
 
 ---
