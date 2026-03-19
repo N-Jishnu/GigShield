@@ -1,442 +1,562 @@
 <div align="center">
 
-# 🛡️ GigShield — AI-Powered Parametric Income Protection for Food Delivery Partners
+# GigShield
 
-### *Because a rainstorm shouldn't mean an empty wallet.*
+### AI-Powered Parametric Income Protection for Grocery & Delivery Partners
 
-[![Phase](https://img.shields.io/badge/Phase-1%20%7C%20Ideation%20%26%20Foundation-blue)]()
-[![Persona](https://img.shields.io/badge/Persona-Food%20Delivery%20(Zomato%2FSwiggy)-orange)]()
+*When the city shuts down, your earnings don't have to.*
+
+</div>
+
+<div align="center">
+
+[![Phase](https://img.shields.io/badge/Phase-1%20%7C%20Ideation%20%26%20Foundation-blue)](https://github.com/your-team/gigshield)
+[![Persona](https://img.shields.io/badge/Persona-Q--Commerce%20Delivery%20(Delhi--NCR)-DR9750)]()
 [![Coverage](https://img.shields.io/badge/Coverage-Loss%20of%20Income%20Only-green)]()
 [![Pricing](https://img.shields.io/badge/Pricing-Weekly%20Model-purple)]()
+[![City](https://img.shields.io/badge/City-Delhi--NCR-red)]()
+[![Triggers](https://img.shields.io/badge/Triggers-4%20Parametric%20Events-orange)]()
+[![AI](https://img.shields.io/badge/AI-Powered%20Pricing%20%2B%20Fraud%20Detection-yellow)]()
+[![Stack](https://img.shields.io/badge/Stack-React%20PWA%20%2B%20Node.js%20%2B%20SQLite-blue)]()
+[![Hackathon](https://img.shields.io/badge/DEVTrails-2026%20%7C%20Guidewire%20University-gold)]()
 
 </div>
 
 ---
 
-## 📑 Table of Contents
+## 📋 Phase 1 Deliverables Checklist
 
-1. [Problem Statement](#-problem-statement)
-2. [Our Persona — The Food Delivery Partner](#-our-persona--the-food-delivery-partner)
-3. [Persona-Based Scenarios](#-persona-based-scenarios)
-4. [Application Workflow](#-application-workflow)
-5. [Weekly Premium Model](#-weekly-premium-model)
-6. [Parametric Triggers](#-parametric-triggers)
-7. [Platform Choice — Web vs Mobile](#-platform-choice--web-vs-mobile)
-8. [AI/ML Integration Strategy](#-aiml-integration-strategy)
-9. [Fraud Detection Architecture](#-fraud-detection-architecture)
-10. [Tech Stack](#-tech-stack)
-11. [Development Roadmap](#-development-roadmap)
-12. [Market Crash Compliance](#-market-crash-compliance)
+| # | Deliverable | Status |
+|---|------------|--------|
+| 1 | README.md (this document) | ✅ |
+| 2 | GitHub Repository with project structure | ✅ |
+| 3 | System Architecture Diagram | ✅ |
+| 4 | Tech Stack Plan | ✅ |
+| 5 | Product Workflow | ✅ |
+| 6 | 2-Minute Strategy Video |✅|
 
 ---
 
-## 🔥 Problem Statement
+## Problem Statement
 
-India has over **10 million gig delivery workers** across platforms like Zomato, Swiggy, Amazon, Zepto, and Blinkit. These workers earn daily wages — typically **₹500–₹1,200/day** — and operate with **zero financial safety net**.
+India has **10 million+ gig delivery workers** across Blinkit, Zepto, Instamart, Zomato, and Swiggy. These workers earn ₹500–₹1,200 daily with **zero financial safety net**.
 
-When external disruptions strike — a heavy monsoon downpour, an AQI spike above 400, a sudden curfew — these workers **cannot deliver**. No deliveries = **no income**. Unlike salaried employees, there is no paid leave, no sick days, no employer-backed insurance.
+When external disruptions strike — extreme heat, severe pollution, heavy rain, or sudden zone restrictions — these workers **cannot work. No work = no income.**
 
-> **GigShield** solves this by providing **AI-powered parametric insurance** that automatically detects disruptions and instantly compensates delivery partners for lost income — **no claims forms, no delays, no middlemen.**
-
-### What We Cover ✅
-| Covered | Not Covered ❌ |
-|---------|---------------|
-| Loss of income due to extreme weather | Health insurance |
-| Loss of income due to severe pollution (AQI) | Life insurance |
-| Loss of income due to curfews/strikes | Accident coverage |
-| Loss of income due to zone closures | Vehicle repair costs |
+> **GigShield** provides **AI-powered parametric insurance** that automatically detects disruptions and instantly compensates delivery partners for lost income — **no claims forms, no delays, no middlemen.**
 
 ---
 
-## 👤 Our Persona — The Food Delivery Partner
+##  What We Cover vs. What We Don't
 
-We have chosen **Food Delivery Partners (Zomato/Swiggy)** as our primary persona.
+| Covered | Not Covered |
+|-----------|---------------|
+| Loss of income from extreme weather | Health or medical insurance |
+| Loss of income from severe pollution (AQI) | Life insurance |
+| Loss of income from curfews / bandhs | Accident or injury coverage |
+| Loss of income from zone closures | Vehicle repair or breakdown |
 
-### Why Food Delivery?
+---
+
+##  Our Persona — Q-Commerce Delivery Partner (Delhi-NCR)
+
+### Why Q-Commerce, Why Delhi-NCR
 
 | Factor | Justification |
-|--------|--------------|
-| **Largest gig workforce** | Zomato + Swiggy employ ~5M+ delivery partners across India |
-| **Highest weather sensitivity** | Food delivery happens outdoors, on two-wheelers, and is directly impacted by rain, heat, and pollution |
-| **Real-time data availability** | Weather APIs, AQI data, and traffic APIs provide rich, city-level data for parametric triggers |
-| **Weekly earning cycle** | Most delivery partners track earnings weekly, aligning perfectly with the weekly premium model |
-| **Underserved segment** | No existing insurance product addresses income loss for food delivery workers specifically |
+|--------|---------------|
+| **Highest hyperlocal sensitivity** | Blinkit/Zepto/Instamart deliver within 10-20 minutes per order. Weather events collapse this model faster than any other delivery type — one heavy rain burst empties the queue instantly. |
+| **Short, intense shifts** | Riders work 2-4 hour shifts, often evening peak. A disruption during a 3-hour shift wipes out a large % of daily income — the payout calculus is clearer and more credible. |
+| **Delhi-NCR has all 4 major disruptions** | Extreme heat (March–June), severe AQI (Oct–Jan), monsoon rain (July–Sept), and frequent zone restrictions / VVIP movements. Every trigger fires here at least once per season. |
+| **Dense, small delivery zones** | A single neighborhood can have drastically different weather or pollution than a neighboring one. This makes hyperlocal parametric triggers real and meaningful, not abstract. |
+| **Earnings volatility is highest here** | Delhi-NCR delivery partners report income swings of ₹300–₹1,100 per day depending on conditions. The pain gap is biggest. |
 
-### Delivery Partner Profile — "Ravi"
+### Persona Profile — "Ankit"
 
-| Attribute | Details |
-|-----------|---------|
-| **Name** | Ravi Kumar |
-| **Age** | 26 years |
-| **Platform** | Zomato / Swiggy |
-| **City** | Bengaluru |
-| **Daily earnings** | ₹800–₹1,100 (avg ₹950) |
-| **Weekly earnings** | ₹5,700–₹6,650 |
-| **Working hours** | 10 AM – 10 PM (split shift) |
+| Attribute | Detail |
+|-----------|--------|
+| **Name** | Ankit Sharma |
+| **Age** | 24 years |
+| **Platform** | Blinkit / Zepto |
+| **City** | South Delhi (Pin Codes: 110017, 110049, 110065) |
+| **Daily earnings** | ₹650–₹1,100 (avg ₹850) |
+| **Weekly earnings** | ₹4,550–₹7,700 |
+| **Shift pattern** | 4 PM – 9 PM (evening peak, 5 days/week) |
 | **Vehicle** | Two-wheeler (personal) |
-| **Key risks** | Monsoon rains (June–Sept), heat waves (March–May), city-level bandhs |
-| **Financial buffer** | < ₹2,000 in savings |
-| **Digital literacy** | Comfortable with apps; uses UPI daily |
+| **Key risks** | Heat waves (April–June), AQI spikes (Nov–Jan), sudden VVIP movements |
+| **Financial buffer** | < ₹1,500 in savings |
+| **Digital literacy** | Comfortable with UPI, Google Maps, WhatsApp. Uses phone for all work communication. |
 
 ---
 
-## 🎬 Persona-Based Scenarios
+##  Day in the Life — Pain Scenario
 
-### Scenario 1: Heavy Rainfall 🌧️
-> **Date:** July 15, Bengaluru  
-> **Event:** IMD issues a Red Alert — rainfall exceeds 65mm in 3 hours  
-> **Impact on Ravi:** Cannot ride safely. Zomato shows "limited delivery zones." Ravi stays home.  
-> **Income lost:** ₹950 (full day)  
-> **GigShield Response:** Weather API detects rainfall threshold breach → Parametric trigger fires → ₹950 auto-credited to Ravi's UPI within 2 hours. **Zero claims filed.**
+> **Monday, June 15 — Delhi-NCR**
+>
+> Ankit starts his evening shift at 4 PM. By 6 PM, a sudden dust storm hits South Delhi. The sky goes dark. Blinkit app shows "Limited slots available in your area." Orders dry up. He rides through the storm for 2 hours and makes ₹120 instead of his usual ₹700. He goes home frustrated, knowing there's no one to补偿 him for the lost ₹580.
+>
+> **GigShield fixes this.** When the weather API detects storm conditions in Ankit's PIN code during his insured shift window, the system fires a trigger. It validates his shift eligibility, calculates his estimated lost income, and sends a UPI payout — all without Ankit filing a single claim.
+
+---
+
+## Real-World Persona Scenarios
+
+These scenarios are based on real conditions that delivery partners across India face every year. Each one maps directly to a GigShield parametric trigger.
+
+### Scenario 1: Heavy Monsoon Rainfall 🌧️
+
+> **Who:** Ravi Kumar — Food Delivery Partner, Zomato
+> **City:** Bengaluru | **Date:** July 15
+>
+> **The Situation:**
+> IMD issues a Red Alert — rainfall exceeds 65mm in 3 hours across South Bengaluru. Roads flood. Ravi's usual delivery route through Indiranagar becomes impassable. The Zomato app shows "Limited delivery zones available." Ravi tries for 2 hours, completes 3 orders instead of his usual 18, and earns ₹120 instead of ₹950.
+>
+> **Income Lost:** ₹830 (full day of potential earnings)
+>
+> **GigShield Response:**
+> OpenWeatherMap API detects rainfall threshold breach in Ravi's declared delivery zones → Parametric trigger fires → GigShield validates Ravi's active shift window and coverage tier → ₹850 credited to Ravi's UPI within 2 hours. **Zero forms. Zero calls. Zero waiting.**
+
+---
 
 ### Scenario 2: Extreme Heat Wave 🔥
-> **Date:** May 3, Delhi  
-> **Event:** Temperature exceeds 46°C. NDMA issues heat advisory.  
-> **Impact on Aamir (Delhi delivery partner):** Platform reduces orders in afternoon slots. Aamir can only work 4 hours instead of 10.  
-> **Income lost:** ₹570 (partial day — 6 hours lost)  
-> **GigShield Response:** Temperature sensor data crosses threshold → Proportional payout calculated based on hours lost → ₹570 credited via UPI.
 
-### Scenario 3: Unplanned Curfew / Bandh 🚫
-> **Date:** September 22, Pune  
-> **Event:** Sudden state-imposed curfew due to law-and-order situation. All movement restricted for 14 hours.  
-> **Impact on Priya (Swiggy partner):** App shows "services suspended in your area." Full day lost.  
-> **Income lost:** ₹850  
-> **GigShield Response:** Government advisory API / news feed NLP detects curfew announcement → Auto-trigger fires for affected PIN codes → ₹850 credited.
+> **Who:** Aamir Khan — Food Delivery Partner, Swiggy
+> **City:** Delhi | **Date:** May 3
+>
+> **The Situation:**
+> Temperature hits 47°C in Delhi-NCR. NDMA issues a heat advisory recommending avoidance of outdoor work between 12 PM and 5 PM. Swiggy platform reduces order assignments in afternoon slots. Aamir, who normally works 10 AM to 10 PM split shifts, can only operate 4 hours safely — from 6 AM to 10 AM and 7 PM to 9 PM. He loses 6 hours of income.
+>
+> **Income Lost:** ₹570 (6 hours of estimated earnings lost)
+>
+> **GigShield Response:**
+> OpenWeatherMap real-feel temperature crosses 45°C threshold during Aamir's afternoon shift window → GigShield calculates proportional payout based on hours lost → ₹570 credited via UPI. GigShield also sends a push notification: *"Heat advisory active. Your coverage is active. Rest safe — we've got you covered."*
+
+---
+
+### Scenario 3: Sudden Curfew / Zone Restriction 🚫
+
+> **Who:** Priya Sharma — Delivery Partner, Instamart
+> **City:** Pune | **Date:** September 22
+>
+> **The Situation:**
+> A law-and-order situation emerges in Hinjewadi. The state government imposes a sudden 14-hour curfew from 8 PM. All movement is restricted. Priya's delivery zone falls within the restricted area. The Instamart app immediately shows "Services suspended in your area." Priya cannot work at all that day.
+>
+> **Income Lost:** ₹850 (full day)
+>
+> **GigShield Response:**
+> Curfew alert is detected via government advisory feed (mocked in Phase 1) → GigShield identifies all active policies covering PIN codes in the Hinjewadi zone → For each insured partner, the zone restriction trigger fires → Full-day payout of ₹850 sent via UPI. Priya wakes up to a payment notification, not a loss.
+
+---
 
 ### Scenario 4: Severe Air Pollution (AQI > 400) 🏭
-> **Date:** November 10, Delhi-NCR  
-> **Event:** AQI crosses 450. GRAP Stage 4 restrictions imposed. Outdoor work advisory issued.  
-> **Impact:** Delivery partners in affected zones face order drops of 70%+.  
-> **Income lost:** ₹665 (proportional to reduced orders)  
-> **GigShield Response:** AQI monitor API detects breach → Proportional payout based on zone-level order reduction data.
+
+> **Who:** Suresh Patel — Grocery Delivery Partner, Blinkit
+> **City:** Delhi-NCR | **Date:** November 10
+>
+> **The Situation:**
+> AQI in Gurugram crosses 450 — GRAP Stage 4 restrictions are imposed. The Delhi government issues an advisory urging residents to avoid outdoor exertion. Blinkit reduces delivery slots across affected zones. Suresh, who works a 4 PM to 9 PM evening shift, sees order volume drop by 70%. He earns ₹180 instead of his usual ₹800.
+>
+> **Income Lost:** ₹620 (proportional to reduced shift productivity)
+>
+> **GigShield Response:**
+> CPCB AQI API detects AQI breach above 400 in Suresh's delivery zone for 3+ consecutive hours → GigShield trigger fires during his 4 PM–9 PM shift → Proportional payout calculated based on estimated productivity drop → ₹620 credited via UPI. GigShield sends a notification: *"Your zone had severe air quality today. A payout of ₹620 has been credited to protect your earnings."*
 
 ---
 
-## 🔄 Application Workflow
+### How These Scenarios Map to Our Triggers
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                        GIGSHIELD WORKFLOW                              │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                       │
-│  ┌──────────┐    ┌──────────────┐    ┌────────────────┐               │
-│  │  STEP 1  │    │   STEP 2     │    │    STEP 3      │               │
-│  │ Onboard  │───▶│ Risk Profile │───▶│ Policy Created │               │
-│  │ (OTP +   │    │ (AI scores   │    │ (Weekly plan   │               │
-│  │  Aadhaar)│    │  location,   │    │  auto-assigned │               │
-│  │          │    │  history)    │    │  + payment)    │               │
-│  └──────────┘    └──────────────┘    └───────┬────────┘               │
-│                                              │                        │
-│                                              ▼                        │
-│  ┌──────────┐    ┌──────────────┐    ┌────────────────┐               │
-│  │  STEP 6  │    │   STEP 5     │    │    STEP 4      │               │
-│  │Dashboard │◀───│ Instant UPI  │◀───│ Auto-Trigger   │               │
-│  │& History │    │   Payout     │    │ Fires (Weather │               │
-│  │          │    │              │    │  API breach)   │               │
-│  └──────────┘    └──────────────┘    └────────────────┘               │
-│                                                                       │
-└─────────────────────────────────────────────────────────────────────────┘
-```
-
-### Detailed Flow:
-
-| Step | Action | Details |
-|------|--------|---------|
-| **1. Onboarding** | Delivery partner registers | Mobile number → OTP verification → Aadhaar-based KYC (DigiLocker API) → Platform ID linking (Zomato/Swiggy partner ID) |
-| **2. AI Risk Profiling** | System generates risk score | ML model analyzes: delivery zone (historical weather data), working hours, city risk index, seasonal patterns → Assigns risk tier (Low/Medium/High) |
-| **3. Policy Creation** | Weekly policy auto-generated | Based on risk tier → Premium calculated (₹49–₹99/week) → Coverage amount set (₹3,500–₹7,000/week) → Auto-debit via UPI mandate |
-| **4. Trigger Monitoring** | Real-time parametric monitoring | Weather API, AQI API, Government advisories monitored 24/7 → When threshold breached in partner's PIN code → Trigger fires automatically |
-| **5. Instant Payout** | Zero-touch claim processing | Trigger event validated → Payout amount calculated (full-day or proportional) → UPI instant transfer → Partner notified via SMS/push |
-| **6. Dashboard** | Partner & admin visibility | Partner sees: active coverage, claim history, earnings protected. Admin sees: loss ratios, trigger frequency, fraud alerts |
+| Scenario | Persona | Trigger | Data Source | Payout |
+|----------|---------|---------|-------------|--------|
+| Heavy Rain | Ravi (Bengaluru) | Heavy Rainfall | OpenWeatherMap | Full shift |
+| Heat Wave | Aamir (Delhi) | Extreme Heat | OpenWeatherMap | Proportional |
+| Curfew | Priya (Pune) | Zone Restriction | Advisory Feed | Full day |
+| AQI Spike | Suresh (Delhi-NCR) | Severe AQI | CPCB/AQICN | Proportional |
 
 ---
 
-## 💰 Weekly Premium Model
+## Product Workflow
 
-### Why Weekly?
-Gig delivery workers are paid on a **weekly settlement cycle** by platforms like Zomato and Swiggy. Monthly premiums create cash flow mismatches — workers may not have ₹400 on Day 1 of the month but can comfortably pay ₹79 at the start of each week from their weekly settlement.
-
-### Premium Structure
-
-| Risk Tier | Weekly Premium | Weekly Coverage (Max Payout) | Daily Rate | Target Profile |
-|-----------|---------------|------------------------------|------------|----------------|
-| 🟢 **Low Risk** | ₹49/week | ₹3,500/week | ₹500/day | Partners in low-rain cities, non-monsoon months |
-| 🟡 **Medium Risk** | ₹79/week | ₹5,500/week | ₹785/day | Partners in metro cities, mixed weather patterns |
-| 🔴 **High Risk** | ₹99/week | ₹7,000/week | ₹1,000/day | Partners in flood-prone/high-AQI zones, monsoon season |
-
-### Premium Calculation Logic
 ```
-Weekly_Premium = Base_Rate × City_Risk_Multiplier × Season_Multiplier × Claims_History_Factor
+[Ankit Registers] → [AI Risk Profile] → [Weekly Policy Created] → [Active Monitoring]
+                                                                              ↓
+                                                               [Trigger Detected]
+                                                                     ↓
+                                                         [Fraud Validation]
+                                                                   ↓          ↓
+                                                           [Auto Payout]  [Flag for Review]
+                                                                   ↓
+                                                         [Dashboard Updated]
+```
+
+### Step-by-Step Flow
+
+| Step | What Happens | Who's Involved |
+|------|-------------|----------------|
+| **1. Registration** | Delivery partner signs up via phone + OTP. Links Blinkit/Zepto partner ID (mocked for Phase 1). Declares delivery zones and shift pattern. | Partner |
+| **2. AI Risk Profiling** | System scores the partner based on: delivery PIN code (historical disruption data), declared shift hours, city risk index, seasonal factor. Assigns a risk tier. | GigShield AI |
+| **3. Policy Creation** | Weekly policy auto-generated. Premium calculated (₹49–₹99/week). Coverage cap set based on declared earnings band. Auto-debit scheduled via UPI. | GigShield |
+| **4. Active Monitoring** | Weather API, AQI API, and government advisory feeds are monitored in real time for the partner's PIN codes and shift windows. | GigShield Engine |
+| **5. Trigger Fires** | A defined disruption threshold is breached during an insured shift. System checks: is this partner in the affected zone? Is it during their active window? | GigShield Engine |
+| **6. Fraud Validation** | Quick check: is this a duplicate claim? Is the location consistent? Was the partner actually inactive? | Fraud Engine |
+| **7. Instant Payout** | If valid, payout is calculated (full-day or proportional) and sent via UPI. Partner gets SMS/push notification. | GigShield + Payment |
+| **8. Dashboard** | Partner sees: active coverage, today's risk level, payout history, protected earnings total. | Partner + Admin |
+
+---
+
+## Weekly Premium Model 💰
+
+### Why Weekly
+
+Gig delivery partners track and receive earnings on a **weekly settlement cycle**. Weekly premiums match their mental model of money — they can pay ₹79 every Sunday from the previous week's earnings without cash-flow stress.
+
+### Coverage Tiers
+
+| Tier | Weekly Premium | Coverage Cap (Max Payout/Week) | Daily Protected Earnings | Who It's For |
+|------|---------------|--------------------------------|-------------------------|-------------|
+|  **Basic** | ₹49/week | ₹3,500/week | ₹500/day | Low-risk zones, non-monsoon months, stable neighborhoods |
+|  **Standard** | ₹79/week | ₹5,500/week | ₹785/day | Metro cities, mixed disruption risk, evening-shift workers |
+|  **Premium** | ₹99/week | ₹7,000/week | ₹1,000/day | High-risk zones, monsoon/heat season, full-day shift workers |
+
+### Premium Calculation (Phase 1 AI Pricing Model)
+
+```
+Weekly_Premium = Base_Premium × Zone_Risk × Season_Factor
 
 Where:
-  Base_Rate           = ₹49 (minimum viable weekly premium)
-  City_Risk_Multiplier = 1.0 (Jaipur) to 1.8 (Mumbai monsoon zone)
-  Season_Multiplier    = 1.0 (Oct-Feb) to 1.5 (Jun-Sep monsoon)
-  Claims_History_Factor = 0.9 (no claims last 4 weeks) to 1.2 (2+ claims last 4 weeks)
+  Base_Premium   = ₹49 (Basic tier minimum)
+  Zone_Risk      = Pulled from historical disruption frequency per PIN code
+                   (0.8 = low-disruption zone, 1.2 = high-disruption zone)
+  Season_Factor  = 1.0 (Oct–Feb) to 1.5 (Jun–Sep monsoon)
+                   1.3 (Mar–May heat season)
+                   1.2 (Nov–Jan pollution season)
 ```
 
-### Financial Viability
+**Example — Ankit, South Delhi, June (monsoon season):**
+```
+Zone_Risk (110017, South Delhi)   = 1.2
+Season_Factor (June, monsoon)      = 1.5
+Base_Premium                       = ₹49
 
-| Metric | Value | Justification |
-|--------|-------|---------------|
-| Average premium/partner/week | ₹79 | Affordable at ~1.3% of weekly earnings (₹6,000) |
-| Target loss ratio | 60-65% | Industry standard for parametric insurance |
-| Expected claims frequency | 2-3 triggers/month (monsoon), 0.5/month (winter) | Based on IMD historical weather data for metros |
-| Break-even pool size | ~5,000 partners per city | Sufficient risk pooling for actuarial stability |
+Weekly_Premium = 49 × 1.2 × 1.5 = ₹88.2 ≈ ₹89/week (Standard tier)
+```
 
----
+**Example — Priya, Dwarka, January (pollution season):**
+```
+Zone_Risk (110075, Dwarka)        = 1.1
+Season_Factor (January, AQI)      = 1.2
+Base_Premium                       = ₹49
 
-## ⚡ Parametric Triggers
+Weekly_Premium = 49 × 1.1 × 1.2 = ₹64.68 ≈ ₹65/week (Standard tier)
+```
 
-Parametric insurance eliminates the traditional claims process. Instead of the worker filing a claim and waiting weeks, **the system automatically detects the event and pays out instantly**.
+### Data Sources for Premium Multipliers
 
-### Defined Triggers
-
-| # | Trigger | Data Source | Threshold | Payout Type | Justification |
-|---|---------|------------|-----------|-------------|---------------|
-| 1 | **Heavy Rainfall** | OpenWeatherMap API / IMD | > 50mm in 3 hours OR Red/Orange alert by IMD | Full-day payout | Historical data shows delivery drops 80%+ during heavy rain |
-| 2 | **Extreme Heat** | OpenWeatherMap API | Temperature > 45°C (real-feel) | Proportional (based on hours above threshold) | NDMA advisories recommend avoiding outdoor work above 45°C |
-| 3 | **Severe AQI** | CPCB AQI API | AQI > 400 (Severe+) | Proportional (50-100% based on duration) | Delhi govt restricts outdoor activities at AQI 400+ |
-| 4 | **Curfew / Bandh** | News NLP + Govt Advisory API | Official curfew/bandh declared for partner's zone | Full-day payout | Legally cannot operate; platforms suspend service |
-| 5 | **Flooding / Waterlogging** | Weather API + Crowd-sourced data | IMD flood warning + rainfall > 100mm/day | Full-day payout | Roads inaccessible; delivery physically impossible |
-
-### Why These Triggers?
-
-- **Objective & Verifiable**: Every trigger is backed by a **publicly available, tamper-proof data source** (government APIs, IMD data, CPCB readings). This eliminates subjectivity and prevents disputes.
-- **Directly Correlated to Income Loss**: Each trigger maps to a documented scenario where delivery platforms either suspend service or orders drop drastically.
-- **Automatable**: All data sources provide API-level access, enabling real-time monitoring without human intervention.
+| Factor | Source | Phase 1 Approach |
+|--------|--------|-----------------|
+| **Zone_Risk** | Historical IMD disruption data + CPCB AQI frequency per PIN | Pre-loaded dataset for Delhi-NCR PIN codes |
+| **Season_Factor** | IMD seasonal calendar + known disruption months | Static seasonal lookup table for Phase 1 |
+| **Phase 2+** | Real-time API feeds, partner claim history, shift pattern analysis | Upgrades to live API integration |
 
 ---
 
-## 📱 Platform Choice — Web vs Mobile
+## Parametric Triggers (Phase 1 — 4 Triggers)
 
-### Our Choice: **Progressive Web App (PWA) — Mobile-First Design**
+Each trigger is backed by a **public, tamper-proof data source** and maps directly to income loss.
 
-| Factor | Web App | Native Mobile | **PWA (Our Choice)** ✅ |
-|--------|---------|--------------|----------------------|
-| Installation barrier | None | High (app store download, 80MB+) | **None** (add to homescreen, <2MB) |
-| Cross-platform | ✅ | ❌ (2 codebases) | **✅ Single codebase** |
-| Offline access | ❌ | ✅ | **✅ Service workers** |
-| Push notifications | Limited | ✅ | **✅ Web Push API** |
-| Development speed | Fast | Slow | **Fast** |
-| Cost to build | Low | High | **Low** |
-| Access to UPI | Via redirect | Deep link | **Via redirect (works)** |
-| Works on low-end phones | ✅ | ❌ (RAM/storage) | **✅** |
+| # | Trigger | Data Source | Threshold | Payout Logic |
+|---|---------|------------|-----------|-------------|
+| 1 | **Extreme Heat** | OpenWeatherMap API (real-feel temp) | > 45°C real-feel for 2+ consecutive hours during insured shift | Full shift payout if disruption lasts ≥ 60% of shift; proportional if less |
+| 2 | **Severe Air Pollution** | CPCB / AQICN.org (AQI data) | AQI > 400 (Severe) for 3+ hours during shift | Proportional payout based on hours affected |
+| 3 | **Heavy Rainfall / Storm** | OpenWeatherMap API (precipitation rate) | Rainfall ≥ 15mm/hour OR IMD Red/Orange alert for partner's district | Full shift payout |
+| 4 | **Zone Restriction / Curfew** | News NLP (mocked via curated alert system for Phase 1) | Official movement restriction declared for partner's PIN code | Full-day payout |
 
-### Justification
+### Trigger Decision Matrix
 
-1. **Delivery partners use low-end Android phones** (₹8,000–₹12,000 range). They already run Zomato/Swiggy/Google Maps — installing another 80MB app is a dealbreaker. A PWA is **< 2MB** and runs from the browser.
-2. **Zero friction onboarding**: Share a link via WhatsApp (their primary communication channel) → Open → Register in 2 minutes. No Play Store needed.
-3. **Single codebase**: With a team of 3-5 people and 6 weeks, maintaining iOS + Android + Web is unrealistic. PWA lets us ship one product that works everywhere.
-4. **Offline capability**: Service workers cache the dashboard, policy details, and claim history — critical when partners are in areas with spotty internet.
+```
+For every registered partner, at every shift window:
 
----
+Is the current time inside an active shift window?
+    NO  → No monitoring, no payout eligibility
+    YES → Check all 4 trigger APIs for partner's PIN codes
+           ANY trigger threshold breached?
+               NO  → No payout
+               YES → Run fraud validation
+                       Pass → Auto-trigger payout
+                       Fail → Flag for admin review
+```
 
-## 🤖 AI/ML Integration Strategy
+### Why Phase 1 Stops at 4 Triggers
 
-### AI Component 1: Dynamic Premium Calculation (ML-Based Pricing Engine)
+| Trigger | Frequency in Delhi-NCR | Demo Credibility |
+|---------|----------------------|-----------------|
+| Extreme Heat | 15-20 days/year (Mar–Jun) | High |
+| Severe AQI | 30-40 days/year (Oct–Jan) | High  |
+| Heavy Rain | 50-60 days/year (Jul–Sep) |  High  |
+| Zone Restriction | 10-15 events/year |  Medium — harder to demo without live news feed |
 
-**Model**: Gradient Boosted Decision Trees (XGBoost / LightGBM)
-
-| Input Feature | Source | Why |
-|--------------|--------|-----|
-| Delivery zone PIN code | User registration | Hyper-local risk varies by neighborhood |
-| Historical weather data (last 2 years) | OpenWeatherMap historical | Predicts future disruption probability |
-| Seasonal pattern | Calendar | Monsoon months = higher risk |
-| City-level claim frequency | Internal data | Cities like Mumbai have 3x more rain claims than Jaipur |
-| Worker's past claim history | Internal data | Frequent claimants may indicate higher-risk zones or behavior |
-
-**Output**: Personalized weekly premium (₹49–₹99) based on the worker's actual risk profile.
-
-**Why XGBoost?**: Tabular data with mixed feature types → XGBoost consistently outperforms deep learning for this class of problems. Fast inference, interpretable (SHAP values for regulatory explainability), and proven in insurance industry pricing models.
-
-### AI Component 2: Intelligent Fraud Detection
-
-**Model**: Isolation Forest + Rule-Based Ensemble
-
-| Fraud Vector | Detection Method | Details |
-|-------------|-----------------|---------|
-| **GPS Spoofing** | Location anomaly detection | Compare claimed location with cell tower / IP geolocation. If partner claims to be in a rain zone but GPS history shows a dry zone → flag |
-| **Duplicate Claims** | Deduplication engine | Same partner, same trigger event, multiple claim attempts → auto-reject |
-| **Fabricated Inactivity** | Activity cross-reference | Cross-check platform API (simulated) — if partner was actually completing deliveries during "disruption" period → flag |
-| **Collusion Patterns** | Graph analysis | Multiple partners from same location filing claims for an event not detected by weather APIs → investigate |
-
-**Why Isolation Forest?**: Unsupervised anomaly detection that doesn't require labeled fraud data (which we won't have initially). It isolates "odd" data points — perfect for catching fraud patterns we haven't seen before.
-
-### AI Component 3: Predictive Risk Modeling
-
-**Model**: Time-Series Forecasting (Prophet / LSTM)
-
-- **Purpose**: Predict next week's disruption probability per zone to proactively adjust coverage and reserves.
-- **Input**: Historical weather patterns, seasonal trends, city-level disruption frequency.
-- **Output**: Zone-wise risk heatmap → Enables the insurer to maintain adequate reserves and offer pre-emptive coverage upgrades.
-
-**Why Prophet?**: Facebook's Prophet handles seasonal time-series with missing data gracefully. Delivery disruptions are inherently seasonal (monsoon, summer heat, winter fog), making Prophet ideal.
+Adding a 5th trigger (flooding) and advanced news NLP is a Phase 2 move.
 
 ---
 
-## 🔒 Fraud Detection Architecture
+## 🤖 AI Integration Strategy
+
+### Phase 1 AI Scope — "AI-Informed, Not AI-Heavy"
+
+Phase 1 demonstrates AI **thinking**, not AI **production systems**.
+
+### AI Component 1: Dynamic Risk Scoring (Pricing Engine)
+
+**Phase 1 approach:** Rule-based scoring function in Node.js using weighted feature inputs.
+
+| Input | Weight | Source |
+|-------|--------|--------|
+| Zone disruption history | 40% | Pre-loaded IMD/CPCB historical dataset per PIN code |
+| Seasonal risk factor | 30% | Static lookup table based on IMD calendar |
+| Shift timing risk | 20% | Evening/night shifts have different exposure profiles |
+| Partner tenure / claim history | 10% | Simulated for Phase 1 |
+
+**Output:** Risk tier (Basic/Standard/Premium) → Weekly premium.
+
+**Phase 2 upgrade:** Replace with XGBoost model trained on real claim data. SHAP values for explainability.
+
+### AI Component 2: Fraud Detection (Basic — Phase 1)
+
+**Phase 1 approach:** Rule-based validation before payout.
+
+| Check | Logic | Action on Failure |
+|-------|-------|-------------------|
+| **Duplicate trigger check** | Same partner, same trigger, within 24 hours → reject duplicate | Auto-reject + log |
+| **Threshold validation** | API data must confirm breach; no payout on borderline values | Auto-reject |
+| **Shift window check** | Trigger must occur during partner's registered shift hours | Auto-reject |
+| **Location plausibility** | Partner declared PIN must match trigger zone | Flag for review |
+
+**Phase 2 upgrade:** Add GPS cross-check, Isolation Forest anomaly scoring, and behavioral pattern matching.
+
+### AI Component 3: Explainability Layer (Phase 1)
+
+Every premium quote and payout decision includes a plain-language reason shown to the partner:
+
+> **"Your weekly premium is ₹89 because June is monsoon season in South Delhi, and historical weather data shows high disruption risk in your zone."**
+
+> **"Your payout of ₹700 was approved because a rainfall threshold was crossed in your area (PIN 110017) during your 6 PM–9 PM shift on June 15."**
+
+
+---
+
+## 🛠️ Tech Stack — Phase 1 Focused
+
+### Why This Stack
+
+| Layer | Technology | Phase 1 Choice | Justification |
+|-------|-----------|----------------|---------------|
+| **Frontend** | React.js + PWA (Workbox) |  Keep | Component-based, PWA-ready. Fastest path to a mobile-first UI that works on Ankit's low-end Android phone. |
+| **Backend** | Node.js + Express.js |  Keep | Fast API development. JavaScript end-to-end reduces context switching for a small team. |
+| **Database** | SQLite (Phase 1) → PostgreSQL (Phase 2) |  Keep | SQLite needs zero setup — ships with the app. Perfect for a 2-week prototype. No Docker or cloud DB needed to get started. |
+| **AI Pricing** | Node.js scoring function (Phase 1) |  Keep | Avoids a separate Python microservice for Phase 1. One AI script in Python can be imported if needed. |
+| **Weather API** | OpenWeatherMap (free tier) |  Keep | 1000 calls/day free. Covers Phase 1 demo easily. |
+| **AQI API** | AQICN.org / CPCB |  Keep | Real Indian city AQI data. Mocked for Phase 1 demo. |
+| **Auth** | Simple OTP via MSG91 or mocked OTP |  Simplify | Firebase adds unnecessary third-party complexity for Phase 1. Mock OTP is fine for demo. |
+| **Payments** | Simulated UPI payout display |  Simplify | No real payments in Phase 1. Show the payout flow as a mock transaction. |
+| **Hosting** | Vercel (frontend) + Railway (backend) |  Keep | Free tiers. Works for Phase 1. |
+| **Cache** | In-memory (Phase 1) → Redis (Phase 2) |  Cut Redis | No real-time caching needed yet. |
+| **ML Microservice** | Not yet |  Cut | Phase 1 scoring runs in-process. Separate service adds Docker, networking, and deployment overhead. |
+| **CI/CD** | GitHub Actions |  Cut | Not needed for a 2-week prototype. |
+| **Monitoring** | Sentry |  Cut | Not needed at this stage. |
+| **API Gateway** | Express.js built-in routing |  Keep | No need for a separate gateway in Phase 1. |
+
+### Phase 1 vs Phase 2 Tech Comparison
+
+| Component | Phase 1 | Phase 2 |
+|-----------|---------|---------|
+| Database | SQLite | PostgreSQL |
+| AI Pricing | Rule-based scoring in Node.js | XGBoost model (Python) |
+| Fraud Detection | Rule-based validation | Isolation Forest + GPS cross-check |
+| Weather API | OpenWeatherMap (mocked for demo) | Live API with webhook |
+| AQI API | Mocked for demo | Live CPCB/AQICN feed |
+| Payments | Simulated payout flow | Razorpay UPI sandbox |
+| Auth | Mock OTP | Real OTP via MSG91/Twilio |
+| Monitoring | Console logs | Sentry + structured logging |
+| Caching | In-memory | Redis |
+| News/Advisory Feed | Curated mock alerts | News NLP (median of 3 sources) |
+
+---
+
+##  System Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│                FRAUD DETECTION PIPELINE                  │
-├──────────────────────────────────────────────────────────┤
-│                                                          │
-│  [Trigger Event] ──▶ [Layer 1: Rule Engine]              │
-│                      ├── Duplicate check                 │
-│                      ├── Threshold validation            │
-│                      └── Time-window check               │
-│                              │                           │
-│                              ▼                           │
-│                     [Layer 2: ML Anomaly Detection]      │
-│                      ├── Isolation Forest score          │
-│                      ├── GPS vs Weather cross-check      │
-│                      └── Behavioral pattern matching     │
-│                              │                           │
-│                     ┌────────┴────────┐                  │
-│                     │                 │                   │
-│              [Score < 0.3]     [Score ≥ 0.3]             │
-│              Auto-approve      Flag for review           │
-│                  │                    │                   │
-│                  ▼                    ▼                   │
-│           [Instant Payout]    [Admin Dashboard]          │
-│                               [Manual Review]            │
-│                                                          │
+│                    DELIVERY PARTNER                       │
+│                   (Mobile PWA — Ankit)                   │
+└─────────────────────────┬────────────────────────────────┘
+                          │ HTTPS
+                          ▼
+┌──────────────────────────────────────────────────────────┐
+│              API SERVER (Express.js)                     │
+│  ┌─────────────┐  ┌──────────────┐  ┌────────────────┐  │
+│  │ /register   │  │ /policy      │  │ /claim/trigger │  │
+│  │ /auth/otp   │  │ /premium     │  │ /payout        │  │
+│  │ /profile     │  │ /dashboard   │  │ /fraud-check   │  │
+│  └─────────────┘  └──────────────┘  └────────────────┘  │
+│                          │                               │
+│         ┌────────────────┼────────────────┐              │
+│         ▼                ▼                ▼              │
+│  ┌─────────────┐  ┌──────────────┐  ┌────────────────┐  │
+│  │ SQLite DB   │  │ AI Scorer    │  │ Trigger Engine │  │
+│  │ Policies    │  │ (Risk Pricing│  │ (Weather/AQI   │  │
+│  │ Partners    │  │  Scoring Fn) │  │  Monitor)      │  │
+│  │ Claims      │  │              │  │                │  │
+│  └─────────────┘  └──────────────┘  └────────────────┘  │
+│                          │                               │
+│                          ▼                               │
+│                 ┌─────────────────┐                     │
+│                 │ External APIs   │                     │
+│                 │ OpenWeatherMap  │                     │
+│                 │ AQICN (AQI)     │                     │
+│                 │ Advisory Feed   │                     │
+│                 └─────────────────┘                     │
 └──────────────────────────────────────────────────────────┘
 ```
 
----
-
-## 🛠️ Tech Stack
-
-### Why This Stack?
-
-| Layer | Technology | Justification |
-|-------|-----------|---------------|
-| **Frontend** | React.js + PWA (Workbox) | Component-based, PWA-ready, massive ecosystem. Mobile-first responsive design. |
-| **Backend** | Node.js + Express.js | Fast API development, async I/O for handling weather API polling, JS full-stack reduces context switching |
-| **Database** | PostgreSQL | Relational data (policies, claims, users) with JSONB for flexible trigger configurations. ACID-compliant for financial data |
-| **Cache** | Redis | Real-time trigger state caching, session management, rate limiting |
-| **AI/ML** | Python (Flask microservice) — XGBoost, Scikit-learn, Prophet | Python is the standard for ML. Separate microservice keeps ML decoupled from the main API |
-| **Weather API** | OpenWeatherMap (free tier) | 1,000 API calls/day free. Provides current weather, forecasts, and historical data |
-| **AQI API** | CPCB / AQICN.org | Free, real-time AQI data for Indian cities |
-| **Payment** | Razorpay Test Mode | UPI autopay mandates for weekly premium collection + instant UPI payouts. Sandbox available |
-| **Auth** | Firebase Auth (OTP) | Phone-based OTP is the natural auth method for delivery partners. Firebase handles it at scale |
-| **Hosting** | Vercel (frontend) + Railway/Render (backend) | Free tiers available. Auto-deploy from GitHub. CI/CD built-in |
-| **CI/CD** | GitHub Actions | Automated testing, linting, and deployment on every push |
-| **Monitoring** | Sentry (error tracking) | Free tier covers our needs. Real-time error monitoring |
-
-### Architecture Diagram
+### Data Flow During a Trigger Event
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        SYSTEM ARCHITECTURE                      │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   [Delivery Partner]                    [Admin/Insurer]         │
-│        │                                     │                  │
-│        ▼                                     ▼                  │
-│   ┌──────────┐                        ┌──────────────┐         │
-│   │ React PWA│                        │ Admin Portal │         │
-│   │ (Mobile) │                        │   (React)    │         │
-│   └────┬─────┘                        └──────┬───────┘         │
-│        │                                     │                  │
-│        └──────────────┬──────────────────────┘                  │
-│                       ▼                                         │
-│              ┌─────────────────┐                                │
-│              │  API Gateway    │                                │
-│              │  (Express.js)   │                                │
-│              └───────┬─────────┘                                │
-│         ┌────────────┼────────────┐                             │
-│         ▼            ▼            ▼                             │
-│  ┌────────────┐ ┌─────────┐ ┌──────────────┐                   │
-│  │ Policy &   │ │ Trigger │ │ ML Service   │                   │
-│  │ Claims API │ │ Monitor │ │ (Python/Flask)│                  │
-│  └─────┬──────┘ └────┬────┘ └──────┬───────┘                   │
-│        │              │             │                           │
-│        ▼              ▼             ▼                           │
-│  ┌──────────┐  ┌───────────┐  ┌──────────┐                     │
-│  │PostgreSQL│  │  Redis    │  │ XGBoost  │                     │
-│  │(Policies,│  │(Trigger   │  │ Prophet  │                     │
-│  │ Claims)  │  │ State)    │  │ IsoForest│                     │
-│  └──────────┘  └───────────┘  └──────────┘                     │
-│        │              │                                         │
-│        ▼              ▼                                         │
-│  ┌───────────────────────────────────┐                          │
-│  │         External APIs             │                          │
-│  │  Weather │ AQI │ Razorpay │ News  │                         │
-│  └───────────────────────────────────┘                          │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
+1. Trigger Engine polls weather/AQI APIs every 15 minutes
+         ↓
+2. Threshold breached for PIN 110017 at 6:15 PM
+         ↓
+3. Find all active policies for PIN 110017 with shift window covering 6 PM
+         ↓
+4. For each matching partner, run fraud validation checks
+         ↓
+5. Fraud pass → calculate payout → log claim → update dashboard
+   Fraud fail → flag for admin review → notify partner of hold
+         ↓
+6. Send SMS/push notification to partner
+         ↓
+7. Partner sees payout in dashboard
+```
+
+### Database Schema (Phase 1 — SQLite)
+
+```
+partners
+  - id, phone, name, platform_id, pin_codes[], shift_start, shift_end, risk_tier, created_at
+
+policies
+  - id, partner_id, tier, weekly_premium, coverage_cap, status, start_date, end_date
+
+triggers
+  - id, type, pin_code, severity, threshold_breached, triggered_at, api_source
+
+claims
+  - id, partner_id, trigger_id, payout_amount, status, processed_at, fraud_check_passed
+
+premium_history
+  - id, partner_id, week_start, premium_charged, payout_received
 ```
 
 ---
 
-## 📅 Development Roadmap
+##  Phase 1 Sprint Plan (Weeks 1–2)
 
-### Phase 1: Ideation & Foundation (Weeks 1-2) — *Current Phase*
-| Week | Deliverable | Status |
-|------|------------|--------|
-| W1 | Persona research, disruption analysis, premium model design | ✅ Complete |
-| W1 | Tech stack finalization, repo setup, architecture design | ✅ Complete |
-| W2 | README documentation (this document) | ✅ Complete |
-| W2 | Minimal prototype — landing page + onboarding flow mockup | ✅ Complete |
-| W2 | 2-minute strategy video | 🔄 In Progress |
+| Day | Deliverable |
+|-----|-------------|
+| **Day 1–2** | Repo setup, tech stack confirmed, Figma/wireframe for onboarding + dashboard |
+| **Day 3–4** | Partner registration + OTP (mocked) + profile setup |
+| **Day 5–6** | Risk scoring function + policy auto-creation + weekly premium display |
+| **Day 7–8** | Trigger engine skeleton + weather/AQI mock data + manual trigger test |
+| **Day 9–10** | Payout flow (mocked UPI) + dashboard with claim history |
+| **Day 11–12** | README finalization, wireframe walkthrough, 2-minute video script |
+| **Day 13–14** | Video recording, final polish, submission |
 
-### Phase 2: Automation & Protection (Weeks 3-4)
-| Week | Deliverable | Priority |
-|------|------------|----------|
-| W3 | Registration system with OTP + KYC flow | P0 |
-| W3 | Policy management — create, view, renew weekly policies | P0 |
-| W3 | Dynamic premium calculation (XGBoost model v1) | P0 |
-| W4 | Parametric trigger engine — integrate Weather + AQI APIs | P0 |
-| W4 | Auto-claim initiation + payout system (Razorpay sandbox) | P0 |
-| W4 | Claims management dashboard | P1 |
+### Phase 1 Success Criteria
 
-### Phase 3: Scale & Optimise (Weeks 5-6)
-| Week | Deliverable | Priority |
-|------|------------|----------|
-| W5 | Advanced fraud detection (Isolation Forest + GPS validation) | P0 |
-| W5 | Instant payout system (simulated UPI) | P0 |
-| W6 | Intelligent dashboard — worker & admin views | P0 |
-| W6 | Predictive analytics (next-week risk forecasting) | P1 |
-| W6 | 5-minute demo video + final pitch deck | P0 |
+- [ ] Partner can register in < 3 minutes
+- [ ] AI pricing shows a personalized weekly premium with a reason
+- [ ] A simulated trigger event can fire and show a payout flow
+- [ ] Dashboard shows active coverage, premium paid, and payout received
+- [ ] README, repo, and video are all submitted
 
 ---
 
-## 🚨 Market Crash Compliance
+## 🚀 Roadmap — All Three Phases
 
-*As per the Market Crash Scenario for Phase 1:*
+### Phase 1: Ideation & Foundation (Weeks 1–2)
+- [x] Persona and problem definition
+- [x] Product workflow design
+- [x] Premium model and trigger definitions
+- [x] Phase 1 tech stack finalization
+- [x] README and repo setup
+- [ ] Onboarding prototype (mock)
+- [ ] 2-minute strategy video
 
-This section will be updated based on the specific compliance requirements issued within 24 hours of the Phase 1 deadline. Our architecture is designed to be **modular** — any regulatory or compliance changes can be integrated without restructuring the core system, thanks to:
+### Phase 2: Automation & Protection (Weeks 3–4)
+- Real-time weather + AQI API integration
+- Auto-trigger engine with webhook support
+- XGBoost pricing model trained on historical data
+- Razorpay UPI sandbox — simulated instant payouts
+- Partner dashboard with live coverage status
+- Admin dashboard with claim log and fraud flags
 
-- **Microservice architecture**: Isolated services can be updated independently
-- **Feature flags**: New compliance rules can be toggled without redeployment
-- **Configurable trigger engine**: New parametric triggers or threshold changes can be added via config, not code
+### Phase 3: Scale & Intelligence (Weeks 5–6)
+- Isolation Forest fraud detection
+- News NLP for curfew/bandh detection
+- Predictive risk heatmap (next-week forecasting)
+- Advanced analytics dashboard
+- Platform partnership API (B2B2C onboarding)
+- Final demo video + investor-style pitch deck
 
 ---
 
-## 💡 Differentiators — Why GigShield Stands Out
+##  Why GigShield ?
 
 | Feature | Traditional Insurance | GigShield |
 |---------|----------------------|-----------|
-| Claim filing | Manual, paper-based | **Zero-touch automatic** |
-| Payout speed | 15-45 days | **< 2 hours** |
-| Premium cycle | Monthly/Annual | **Weekly** (aligned with gig earnings) |
-| Risk assessment | Generic demographics | **AI-driven, hyper-local** |
-| Fraud detection | Post-claim manual review | **Real-time ML-powered** |
-| Onboarding | Branch visit, 20+ documents | **2 minutes, phone + OTP** |
-| Coverage trigger | Worker must prove loss | **Automated parametric verification** |
+| Claim filing | Paper forms, 15-45 day wait | **Zero-touch, auto-trigger** |
+| Payout speed | Weeks | **Same day / within hours** |
+| Premium model | Monthly / annual | **Weekly** (matches gig earnings) |
+| Risk assessment | Generic demographics | **AI-driven, hyperlocal, PIN-level** |
+| Fraud detection | Post-claim manual review | **Real-time rule + ML validation** |
+| Onboarding | Branch visit, 20 documents | **2 minutes, phone + OTP** |
+| Transparency | Complex policy documents | **Plain-language reasons for every decision** |
+| Trigger proof | Worker must prove loss | **Parametric data validates automatically** |
 
 ---
 
-## 👥 Team
+##  GitHub Repository
 
-| Name | Role | Responsibility |
-|------|------|---------------|
-| Jishnu | Full Stack Lead | Frontend (React PWA), API development |
-| Swayam | Backend & DevOps | Express.js APIs, PostgreSQL, CI/CD, deployment |
-| Adit  | AI/ML Engineer | Premium model, fraud detection, predictive analytics |
-| Gargi | Product & Design | UX research, persona development, UI design, video |
+**Repository:** [github.com/your-team/gigshield](https://github.com/your-team/gigshield)
 
----
+```
+gigshield/
+├── README.md                    # Project documentation
+├── SPEC.md                      # Product specification
+├── frontend/                    # React PWA
+│   ├── src/
+│   │   ├── components/         # UI components
+│   │   ├── pages/              # Onboarding, Dashboard, Profile
+│   │   ├── services/          # API calls
+│   │   └── App.jsx
+│   ├── public/
+│   │   └── manifest.json       # PWA manifest
+│   └── package.json
+├── backend/                    # Express.js API
+│   ├── routes/                 # /register, /policy, /trigger, /payout
+│   ├── models/                # SQLite schema
+│   ├── services/
+│   │   ├── scoring.js         # AI pricing function
+│   │   ├── trigger.js         # Trigger engine
+│   │   └── fraud.js           # Fraud validation
+│   ├── data/
+│   │   ├── zones.js           # Delhi-NCR PIN risk data
+│   │   └── seasons.js         # Seasonal risk lookup
+│   └── server.js
+├── ml/                         # Python ML scripts (Phase 2+)
+│   ├── pricing_model.py       # XGBoost pricing
+│   └── fraud_model.py         # Isolation Forest
+├── docs/                       # Additional docs
+│   ├── architecture.md
+│   └── api-spec.md
+└── .github/
+    └── workflows/             # CI/CD (Phase 2+)
+```
+
