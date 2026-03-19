@@ -80,7 +80,7 @@ When external disruptions strike — extreme heat, severe pollution, heavy rain,
 
 > **Monday, June 15 — Delhi-NCR**
 >
-> Ankit starts his evening shift at 4 PM. By 6 PM, a sudden dust storm hits South Delhi. The sky goes dark. Blinkit app shows "Limited slots available in your area." Orders dry up. He rides through the storm for 2 hours and makes ₹120 instead of his usual ₹700. He goes home frustrated, knowing there's no one to补偿 him for the lost ₹580.
+> Ankit starts his evening shift at 4 PM. By 6 PM, a sudden dust storm hits South Delhi. The sky goes dark. Blinkit app shows "Limited slots available in your area." Orders dry up. He rides through the storm for 2 hours and makes ₹120 instead of his usual ₹700. He goes home frustrated, knowing there's nothing he can do for the lost ₹580.
 >
 > **GigShield fixes this.** When the weather API detects storm conditions in Ankit's PIN code during his insured shift window, the system fires a trigger. It validates his shift eligibility, calculates his estimated lost income, and sends a UPI payout — all without Ankit filing a single claim.
 
