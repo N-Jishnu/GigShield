@@ -4,7 +4,7 @@
 
 ### AI-Powered Parametric Income Protection for Grocery & Delivery Partners
 
-*When the city shuts down, your earnings don't have to.*
+*When the city shuts down, your earnings don't .*
 
 </div>
 
