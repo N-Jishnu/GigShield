@@ -443,7 +443,46 @@ premium_history
 
 ##  Roadmap
 
+| Phase | Weeks | Focus | Submit |
+|-------|-------|-------|--------|
+| Phase 1 | 1–2 | README, mock prototype, strategy video | D14 |
+| Phase 2 | 3–4 | Real APIs, trigger engine, auto-payout | D34 |
+| Phase 3 | 5–6 | ML models, fraud detection, pitch + demo | D54 |
 
+---
+
+## Phase 1 (D1–14) — Ideation & Foundation
+
+| Week | Tasks |
+|------|-------|
+| **W1** | Repo setup → DB schema → Express skeleton → React PWA scaffold → AI pricing function → Trigger engine (mock) → End-to-end mock |
+| **W2** | README final → Polish UI → Video script → Record + edit → Submit |
+
+**Must ship:** README, mock demo
+
+---
+
+## Phase 2 (D15–34) — Core Product
+
+| Week | Tasks |
+|------|-------|
+| **W3** | Real OTP → Partner registration → Live OpenWeatherMap + AQI → Trigger engine (live) → Payout calculator → Fraud validation |
+| **W4** | Dashboard (live data) → UPI payout display → Admin panel → Deploy → Bug fixes → Demo run-through → Submit |
+
+**Must ship:** Live APIs, 2+ triggers fire in demo, deployed URLs
+
+---
+
+## Phase 3 (D35–54) — Intelligence + Polish
+
+| Week | Tasks |
+|------|-------|
+| **W5** | XGBoost pricing + SHAP → Isolation Forest fraud → GPS cross-check → Fraud review UI → Prophet risk forecast → Zone heatmap → Analytics charts → B2B2C API → Security audit |
+| **W6** | Demo recording × 3 → Pitch deck → Code review → Final polish → Submit |
+
+**Must ship:** ML in production, demo, pitch deck, clean codebase
+
+---
 
 ##  Why GigShield ?
 
