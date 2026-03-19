@@ -204,7 +204,7 @@ Gig delivery partners track and receive earnings on a **weekly settlement cycle*
 |  **Standard** | ₹79/week | ₹5,500/week | ₹785/day | Metro cities, mixed disruption risk, evening-shift workers |
 |  **Premium** | ₹99/week | ₹7,000/week | ₹1,000/day | High-risk zones, monsoon/heat season, full-day shift workers |
 
-### Premium Calculation (Phase 1 AI Pricing Model)
+### Premium Calculation (AI Pricing Model)
 
 ```
 Weekly_Premium = Base_Premium × Zone_Risk × Season_Factor
@@ -287,9 +287,7 @@ Adding a 5th trigger (flooding) and advanced news NLP is a Phase 2 move.
 
 ## 🤖 AI Integration Strategy
 
-### Phase 1 AI Scope — "AI-Informed, Not AI-Heavy"
-
-Phase 1 demonstrates AI **thinking**, not AI **production systems**.
+### AI Scope — "AI-Informed, Not AI-Heavy"
 
 ### AI Component 1: Dynamic Risk Scoring (Pricing Engine)
 
@@ -306,7 +304,7 @@ Phase 1 demonstrates AI **thinking**, not AI **production systems**.
 
 **Phase 2 upgrade:** Replace with XGBoost model trained on real claim data. SHAP values for explainability.
 
-### AI Component 2: Fraud Detection (Basic — Phase 1)
+### AI Component 2: Fraud Detection 
 
 **Phase 1 approach:** Rule-based validation before payout.
 
@@ -319,7 +317,7 @@ Phase 1 demonstrates AI **thinking**, not AI **production systems**.
 
 **Phase 2 upgrade:** Add GPS cross-check, Isolation Forest anomaly scoring, and behavioral pattern matching.
 
-### AI Component 3: Explainability Layer (Phase 1)
+### AI Component 3: Explainability Layer 
 
 Every premium quote and payout decision includes a plain-language reason shown to the partner:
 
@@ -372,35 +370,35 @@ Every premium quote and payout decision includes a plain-language reason shown t
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│                    DELIVERY PARTNER                       │
+│                    DELIVERY PARTNER                      │
 │                   (Mobile PWA — Ankit)                   │
 └─────────────────────────┬────────────────────────────────┘
                           │ HTTPS
                           ▼
 ┌──────────────────────────────────────────────────────────┐
 │              API SERVER (Express.js)                     │
-│  ┌─────────────┐  ┌──────────────┐  ┌────────────────┐  │
-│  │ /register   │  │ /policy      │  │ /claim/trigger │  │
-│  │ /auth/otp   │  │ /premium     │  │ /payout        │  │
-│  │ /profile     │  │ /dashboard   │  │ /fraud-check   │  │
-│  └─────────────┘  └──────────────┘  └────────────────┘  │
+│  ┌─────────────┐  ┌──────────────┐  ┌────────────────┐   │
+│  │ /register   │  │ /policy      │  │ /claim/trigger │   │
+│  │ /auth/otp   │  │ /premium     │  │ /payout        │   │
+│  │ /profile    │  │ /dashboard   │  │ /fraud-check   │   │
+│  └─────────────┘  └──────────────┘  └────────────────┘   │
 │                          │                               │
 │         ┌────────────────┼────────────────┐              │
 │         ▼                ▼                ▼              │
-│  ┌─────────────┐  ┌──────────────┐  ┌────────────────┐  │
-│  │ SQLite DB   │  │ AI Scorer    │  │ Trigger Engine │  │
-│  │ Policies    │  │ (Risk Pricing│  │ (Weather/AQI   │  │
-│  │ Partners    │  │  Scoring Fn) │  │  Monitor)      │  │
-│  │ Claims      │  │              │  │                │  │
-│  └─────────────┘  └──────────────┘  └────────────────┘  │
+│  ┌─────────────┐  ┌──────────────┐  ┌────────────────┐   │
+│  │ SQLite DB   │  │ AI Scorer    │  │ Trigger Engine │   │
+│  │ Policies    │  │ (Risk Pricing│  │ (Weather/AQI   │   │
+│  │ Partners    │  │  Scoring Fn) │  │  Monitor)      │   │
+│  │ Claims      │  │              │  │                │   │
+│  └─────────────┘  └──────────────┘  └────────────────┘   │
 │                          │                               │
 │                          ▼                               │
-│                 ┌─────────────────┐                     │
-│                 │ External APIs   │                     │
-│                 │ OpenWeatherMap  │                     │
-│                 │ AQICN (AQI)     │                     │
-│                 │ Advisory Feed   │                     │
-│                 └─────────────────┘                     │
+│                 ┌─────────────────┐                      │
+│                 │ External APIs   │                      │
+│                 │ OpenWeatherMap  │                      │
+│                 │ AQICN (AQI)     │                      │
+│                 │ Advisory Feed   │                      │
+│                 └─────────────────┘                      │
 └──────────────────────────────────────────────────────────┘
 ```
 
@@ -442,58 +440,10 @@ premium_history
   - id, partner_id, week_start, premium_charged, payout_received
 ```
 
----
 
-##  Phase 1 Sprint Plan (Weeks 1–2)
+##  Roadmap
 
-| Day | Deliverable |
-|-----|-------------|
-| **Day 1–2** | Repo setup, tech stack confirmed, Figma/wireframe for onboarding + dashboard |
-| **Day 3–4** | Partner registration + OTP (mocked) + profile setup |
-| **Day 5–6** | Risk scoring function + policy auto-creation + weekly premium display |
-| **Day 7–8** | Trigger engine skeleton + weather/AQI mock data + manual trigger test |
-| **Day 9–10** | Payout flow (mocked UPI) + dashboard with claim history |
-| **Day 11–12** | README finalization, wireframe walkthrough, 2-minute video script |
-| **Day 13–14** | Video recording, final polish, submission |
 
-### Phase 1 Success Criteria
-
-- [ ] Partner can register in < 3 minutes
-- [ ] AI pricing shows a personalized weekly premium with a reason
-- [ ] A simulated trigger event can fire and show a payout flow
-- [ ] Dashboard shows active coverage, premium paid, and payout received
-- [ ] README, repo, and video are all submitted
-
----
-
-## 🚀 Roadmap — All Three Phases
-
-### Phase 1: Ideation & Foundation (Weeks 1–2)
-- [x] Persona and problem definition
-- [x] Product workflow design
-- [x] Premium model and trigger definitions
-- [x] Phase 1 tech stack finalization
-- [x] README and repo setup
-- [ ] Onboarding prototype (mock)
-- [ ] 2-minute strategy video
-
-### Phase 2: Automation & Protection (Weeks 3–4)
-- Real-time weather + AQI API integration
-- Auto-trigger engine with webhook support
-- XGBoost pricing model trained on historical data
-- Razorpay UPI sandbox — simulated instant payouts
-- Partner dashboard with live coverage status
-- Admin dashboard with claim log and fraud flags
-
-### Phase 3: Scale & Intelligence (Weeks 5–6)
-- Isolation Forest fraud detection
-- News NLP for curfew/bandh detection
-- Predictive risk heatmap (next-week forecasting)
-- Advanced analytics dashboard
-- Platform partnership API (B2B2C onboarding)
-- Final demo video + investor-style pitch deck
-
----
 
 ##  Why GigShield ?
 
