@@ -442,15 +442,15 @@ premium_history
 
 ##  Roadmap
 
-| Phase | Weeks | Focus | Submit |
-|-------|-------|-------|--------|
-| Phase 1 | 1–2 | README, mock prototype, strategy video | D14 |
-| Phase 2 | 3–4 | Real APIs, trigger engine, auto-payout | D34 |
-| Phase 3 | 5–6 | ML models, fraud detection, pitch + demo | D54 |
+| Phase  | Focus | Submit |
+|-------|-------|--------|
+| Phase 1  | README, mock prototype, strategy video |
+| Phase 2 | Real APIs, trigger engine, auto-payout | 
+| Phase 3  | ML models, fraud detection, pitch + demo | 
 
 ---
 
-## Phase 1 (D1–14) — Ideation & Foundation
+## Phase 1 — Ideation & Foundation
 
 | Week | Tasks |
 |------|-------|
@@ -461,7 +461,7 @@ premium_history
 
 ---
 
-## Phase 2 (D15–34) — Core Product
+## Phase 2  — Core Product
 
 | Week | Tasks |
 |------|-------|
@@ -472,7 +472,7 @@ premium_history
 
 ---
 
-## Phase 3 (D35–54) — Intelligence + Polish
+## Phase 3  — Intelligence + Polish
 
 | Week | Tasks |
 |------|-------|
