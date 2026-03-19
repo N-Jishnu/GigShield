@@ -331,22 +331,22 @@ Every premium quote and payout decision includes a plain-language reason shown t
 
 ### Why This Stack
 
-| Layer | Technology | Phase 1 Choice | Justification |
-|-------|-----------|----------------|---------------|
-| **Frontend** | React.js + PWA (Workbox) |  Keep | Component-based, PWA-ready. Fastest path to a mobile-first UI that works on Ankit's low-end Android phone. |
-| **Backend** | Node.js + Express.js |  Keep | Fast API development. JavaScript end-to-end reduces context switching for a small team. |
-| **Database** | SQLite (Phase 1) → PostgreSQL (Phase 2) |  Keep | SQLite needs zero setup — ships with the app. Perfect for a 2-week prototype. No Docker or cloud DB needed to get started. |
-| **AI Pricing** | Node.js scoring function (Phase 1) |  Keep | Avoids a separate Python microservice for Phase 1. One AI script in Python can be imported if needed. |
-| **Weather API** | OpenWeatherMap (free tier) |  Keep | 1000 calls/day free. Covers Phase 1 demo easily. |
-| **AQI API** | AQICN.org / CPCB |  Keep | Real Indian city AQI data. Mocked for Phase 1 demo. |
-| **Auth** | Simple OTP via MSG91 or mocked OTP |  Simplify | Firebase adds unnecessary third-party complexity for Phase 1. Mock OTP is fine for demo. |
-| **Payments** | Simulated UPI payout display |  Simplify | No real payments in Phase 1. Show the payout flow as a mock transaction. |
-| **Hosting** | Vercel (frontend) + Railway (backend) |  Keep | Free tiers. Works for Phase 1. |
-| **Cache** | In-memory (Phase 1) → Redis (Phase 2) |  Cut Redis | No real-time caching needed yet. |
-| **ML Microservice** | Not yet |  Cut | Phase 1 scoring runs in-process. Separate service adds Docker, networking, and deployment overhead. |
-| **CI/CD** | GitHub Actions |  Cut | Not needed for a 2-week prototype. |
-| **Monitoring** | Sentry |  Cut | Not needed at this stage. |
-| **API Gateway** | Express.js built-in routing |  Keep | No need for a separate gateway in Phase 1. |
+| Layer | Technology  | Justification |
+|-------|-----------|---------------|
+| **Frontend** | React.js + PWA (Workbox)  | Component-based, PWA-ready. Fastest path to a mobile-first UI that works on Ankit's low-end Android phone. |
+| **Backend** | Node.js + Express.js  | Fast API development. JavaScript end-to-end reduces context switching for a small team. |
+| **Database** | SQLite (Phase 1) → PostgreSQL (Phase 2) | SQLite needs zero setup — ships with the app. Perfect for a 2-week prototype. No Docker or cloud DB needed to get started. |
+| **AI Pricing** | Node.js scoring function (Phase 1)  | Avoids a separate Python microservice for Phase 1. One AI script in Python can be imported if needed. |
+| **Weather API** | OpenWeatherMap (free tier) | 1000 calls/day free. Covers Phase 1 demo easily. |
+| **AQI API** | AQICN.org / CPCB | Real Indian city AQI data. Mocked for Phase 1 demo. |
+| **Auth** | Simple OTP via MSG91 or mocked OTP || Firebase adds unnecessary third-party complexity for Phase 1. Mock OTP is fine for demo. |
+| **Payments** | Simulated UPI payout display  | No real payments in Phase 1. Show the payout flow as a mock transaction. |
+| **Hosting** | Vercel (frontend) + Railway (backend)  | Free tiers. Works for Phase 1. |
+| **Cache** | In-memory (Phase 1) → Redis (Phase 2)  | No real-time caching needed yet. |
+| **ML Microservice** | Not yet  | Phase 1 scoring runs in-process. Separate service adds Docker, networking, and deployment overhead. |
+| **CI/CD** | GitHub Actions  | Not needed for a 2-week prototype. |
+| **Monitoring** | Sentry  | Not needed at this stage. |
+| **API Gateway** | Express.js built-in routing  | No need for a separate gateway in Phase 1. |
 
 ### Phase 1 vs Phase 2 Tech Comparison
 
