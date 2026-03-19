@@ -441,21 +441,3 @@ This section will be updated based on the specific compliance requirements issue
 | TBD | Product & Design | UX research, persona development, UI design, video |
 
 ---
-
-## 📎 Links
-
-| Resource | Link |
-|----------|------|
-| 📂 Repository | *[This Repository]* |
-| 🎬 2-Minute Video | *[To be uploaded]* |
-| 📄 Prototype | *[To be linked]* |
-
----
-
-<div align="center">
-
-### *Built with ❤️ for India's 10 million+ delivery heroes*
-
-**DEVTrails 2026 — Guidewire University Hackathon**
-
-</div>
