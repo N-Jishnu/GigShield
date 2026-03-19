@@ -442,8 +442,8 @@ premium_history
 
 ##  Roadmap
 
-| Phase  | Focus | Submit |
-|-------|-------|--------|
+| Phase  | Focus | 
+|-------|-------|
 | Phase 1  | README, mock prototype, strategy video |
 | Phase 2 | Real APIs, trigger engine, auto-payout | 
 | Phase 3  | ML models, fraud detection, pitch + demo | 
