@@ -692,7 +692,7 @@ premium_history
 
 ##  GitHub Repository
 
-**Repository:** [github.com/your-team/gigshield](https://github.com/N-Jishnu/gigshield)
+**Repository:** [github.com](https://github.com/N-Jishnu/gigshield)
 
 ```
 gigshield/
