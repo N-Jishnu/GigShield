@@ -10,12 +10,10 @@
 
 <div align="center">
 
-[![Phase](https://img.shields.io/badge/Phase-1%20%7C%20Ideation%20%26%20Foundation-blue)](https://github.com/your-team/gigshield)
 [![Coverage](https://img.shields.io/badge/Coverage-Loss%20of%20Income%20Only-green)]()
 [![Pricing](https://img.shields.io/badge/Pricing-Weekly%20Model-purple)]()
 [![Triggers](https://img.shields.io/badge/Triggers-4%20Parametric%20Events-orange)]()
 [![AI](https://img.shields.io/badge/AI-Powered%20Pricing%20%2B%20Fraud%20Detection-yellow)]()
-[![Stack](https://img.shields.io/badge/Stack-React%20PWA%20%2B%20Node.js%20%2B%20SQLite-blue)]()
 
 </div>
 
