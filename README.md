@@ -165,11 +165,11 @@ These scenarios are based on real conditions that delivery partners across India
 ```
 [Ankit Registers] → [AI Risk Profile] → [Weekly Policy Created] → [Active Monitoring]
                                                                               ↓
-                                                               [Trigger Detected]
-                                                                     ↓
-                                                         [Fraud Validation]
-                                                                   ↓          ↓
-                                                           [Auto Payout]  [Flag for Review]
+                                                                  [Trigger Detected]
+                                                                              ↓
+                                                                  [Fraud Validation]
+                                                                   ↓              ↓
+                                                           [Auto Payout]        [Flag for Review]
                                                                    ↓
                                                          [Dashboard Updated]
 ```
