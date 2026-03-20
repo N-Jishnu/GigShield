@@ -478,8 +478,6 @@ Adding a 5th trigger (flooding) and advanced news NLP is a Phase 2 move.
 
 ## 🤖 AI Integration Strategy
 
-### AI Scope — "AI-Informed, Not AI-Heavy"
-
 ### AI Component 1: Dynamic Risk Scoring (Pricing Engine)
 
 **Phase 1 approach:** Rule-based scoring function in Node.js using weighted feature inputs.
